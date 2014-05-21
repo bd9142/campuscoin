@@ -1,0 +1,6 @@
+usr/local/bin/campuscoin-qt usr/bin
+share/pixmaps/campuscoin32.xpm usr/share/pixmaps
+share/pixmaps/campuscoin16.xpm usr/share/pixmaps
+share/pixmaps/campuscoin128.png usr/share/pixmaps
+debian/campuscoin-qt.desktop usr/share/applications
+debian/campuscoin-qt.protocol usr/share/kde4/services/

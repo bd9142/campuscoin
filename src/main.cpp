@@ -1197,8 +1197,8 @@ int64_t GetBlockValue(int nHeight, int64_t nFees)
     return nSubsidy + nFees;
 }
 
-static const int64_t nTargetTimespan = 14 * 24 * 60 * 60; // two weeks
-static const int64_t nTargetSpacing = 10 * 60;
+static const int64_t nTargetTimespan = 60; // two weeks
+static const int64_t nTargetSpacing = 24 * 60 * 60;
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -1730,7 +1730,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("bitcoin-scriptch");
+    RenameThread("campuscoin-scriptch");
     scriptcheckqueue.Thread();
 }
 

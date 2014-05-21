@@ -1,4 +1,4 @@
-Source: bitcoin
+Source: campuscoin
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk>
@@ -21,11 +21,11 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.bitcoin.org/
-Vcs-Git: git://github.com/bitcoin/bitcoin.git
-Vcs-Browser: http://github.com/bitcoin/bitcoin
+Homepage: http://www.campuscoin.org/
+Vcs-Git: git://github.com/campuscoin/campuscoin.git
+Vcs-Browser: http://github.com/campuscoin/campuscoin
 
-Package: bitcoind
+Package: campuscoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -38,10 +38,10 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 20+ GB of space, slowly growing.
  .
- This package provides bitcoind, a combined daemon and CLI tool to
+ This package provides campuscoind, a combined daemon and CLI tool to
  interact with the daemon.
 
-Package: bitcoin-qt
+Package: campuscoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI

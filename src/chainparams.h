@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHAIN_PARAMS_H
-#define BITCOIN_CHAIN_PARAMS_H
+#ifndef CAMPUSCOIN_CHAIN_PARAMS_H
+#define CAMPUSCOIN_CHAIN_PARAMS_H
 
 #include "uint256.h"
 

@@ -13,8 +13,8 @@ fi
 
 set -f
 
-BITCOIND=${1}/bitcoind
-CLI=${1}/bitcoin-cli
+CAMPUSCOIND=${1}/campuscoind
+CLI=${1}/campuscoin-cli
 
 DIR="${BASH_SOURCE%/*}"
 SENDANDWAIT="${DIR}/send.sh"
@@ -26,19 +26,19 @@ D=$(mktemp -d test.XXXXX)
 D1=${D}/node1
 CreateDataDir "$D1" port=11000 rpcport=11001
 B1ARGS="-datadir=$D1"
-$BITCOIND $B1ARGS &
+$CAMPUSCOIND $B1ARGS &
 B1PID=$!
 
 D2=${D}/node2
 CreateDataDir "$D2" port=11010 rpcport=11011 connect=127.0.0.1:11000
 B2ARGS="-datadir=$D2"
-$BITCOIND $B2ARGS &
+$CAMPUSCOIND $B2ARGS &
 B2PID=$!
 
 D3=${D}/node3
 CreateDataDir "$D3" port=11020 rpcport=11021 connect=127.0.0.1:11000
 B3ARGS="-datadir=$D3"
-$BITCOIND $BITCOINDARGS $B3ARGS &
+$CAMPUSCOIND $CAMPUSCOINDARGS $B3ARGS &
 B3PID=$!
 
 # Wait until all three nodes are at the same block number
